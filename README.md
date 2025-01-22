@@ -4,10 +4,10 @@
 SQLite база данных работающая через TCP протокол
 
 Usage of tinydb.exe:
-  -b uint
-        Max conn buff size (default 8388608)
-  -p uint
-        Port (default 4004)
+  - -b uint
+        - Max conn buff size (default 8388608)
+  - -p uint
+        - Port (default 4004)
 
 Сообщение: [hash][data]
 

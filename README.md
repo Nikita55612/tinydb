@@ -14,8 +14,6 @@ import (
 	"net"
 	"os"
 	"testing"
-
-	_ "github.com/mattn/go-sqlite3"
 )
 
 const Addr = ":4000"

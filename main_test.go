@@ -87,7 +87,7 @@ func TestReplase(t *testing.T) {
 	defer conn.Close()
 
 	// Перезапись данных
-	_, err = conn.Write(append(hash, []byte("Замена данных")...))
+	_, err = conn.Write(append(hash, []byte("Новые данные")...))
 	if err != nil {
 		t.Fatalf("Failed to send data: %v", err)
 	}
@@ -98,8 +98,6 @@ func TestReplase(t *testing.T) {
 		t.Fatalf("Failed to read response: %v", err)
 	}
 
-	// Полученные данные
-	fmt.Printf("Received %d bytes from data: %s\n", n, string(buff[32:n]))
 	// Новый hash
 	fmt.Printf("New hash: %s\n", string(buff[:32]))
 
